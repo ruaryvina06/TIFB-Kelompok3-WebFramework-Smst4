@@ -11,7 +11,25 @@
     <title>Hello, world!</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    
+  <table class="table">
+    <thead>
+        <tr>
+        <th scope="col">No</th>
+        <th scope="col">Id Petugas</th>
+        <th scope="col">Nama</th>
+        <th scope="col">No.Hp</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+        <th scope="row">1</th>
+        <td>Mark</td>
+        <td>Otto</td>
+        <td>@mdo</td>
+        </tr>
+    </tbody>
+    </table>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
