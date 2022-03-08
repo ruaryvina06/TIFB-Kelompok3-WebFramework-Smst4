@@ -14,5 +14,17 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
+});
+
+Route::get('/petugas', function () {
+    return view('petugas');
+});
+
+Route::get('/tambah_petugas', function () {
+    return view('tambah_petugas');
+});
+
+Route::get('/edit_petugas', function () {
+    return view('edit_petugas');
 });
