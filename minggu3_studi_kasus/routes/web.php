@@ -16,9 +16,17 @@ Route::get('/', function () {
     return view('home');
 });
 
-// Route::get('/login', function () {
-//     return view('login');
-// });
+Route::get('/petugas', function () {
+    return view('petugas');
+});
+
+Route::get('/tambah_petugas', function () {
+    return view('tambah_petugas');
+});
+
+Route::get('/edit_petugas', function () {
+    return view('edit_petugas');
+});
 
 
 // Route::view('/home', 'home');

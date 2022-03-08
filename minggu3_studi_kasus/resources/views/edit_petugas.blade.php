@@ -11,31 +11,18 @@
     <title>Hello, world!</title>
   </head>
   <body>
-
-  <div header>
-    <a class="btn btn-success" href="/tambah_petugas">Tambah Petugas</a>
-  </div>
     
-  <table class="table">
-    <thead>
-        <tr>
-        <th scope="col">No</th>
-        <th scope="col">Id Petugas</th>
-        <th scope="col">Nama</th>
-        <th scope="col">No.Hp</th>
-        <th scope="col">Action</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-        <th scope="row">1</th>
-        <td>Mark</td>
-        <td>Otto</td>
-        <td>@mdo</td>
-        <td><a href="/edit_petugas">Edit</a></td>
-        </tr>
-    </tbody>
-    </table>
+    <form>
+        <div class="form-group">
+            <label for="formGroupExampleInput">Example label</label>
+            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input">
+        </div>
+        <div class="form-group">
+            <label for="formGroupExampleInput2">Another label</label>
+            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
+        </div>
+        <button type="submit" class="btn btn-primary">Sign in</button>
+    </form>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
