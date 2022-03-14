@@ -13,16 +13,16 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('detail_kembali', function (Blueprint $table) {
-
+        Schema::create('petugas', function (Blueprint $table) {
             $table->id();
-            $table->bigInteger('id_kembali')->unsigned();
-            $table->dateTIme('tanggal_kembali');
-            $table->bigInteger('id_pinjam')->unsigned();
-            $table->bigInteger('id_buku')->unsigned();
-            $table->Integer('qty')->unsigned();
+            $table->string('nama_petugas', 50);
+            $table->string('jenis_kelamin', 10);
+            $table->string('jabatan', 15);
+            $table->string('no_hp', 15);
+            $table->text('alamat')->nullable();
             $table->timestamps();
 
+            //jk, jabatan, alamat, no hp, jam kerja
         });
     }
 
@@ -33,6 +33,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('detail_kembali');
+        Schema::dropIfExists('petugas');
     }
 };
