@@ -24,3 +24,7 @@ Route::get('/pinjam', function () {
 Route::get('/kembali', function () {
     return view('kembali');
 });
+
+Route::get('/formPinjam', function () {
+    return view('formPinjam');
+});
