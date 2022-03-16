@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('nama_anggota',50);
             $table->string('jenis_kelamin',50);
             $table->string('alamat');
-            $table->string('no_telp',20);
+            $table->string('no_hp',20);
             $table->timestamps();
         });
     }
