@@ -13,16 +13,11 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('petugas', function (Blueprint $table) {
+        Schema::create('detail_kembali', function (Blueprint $table) {
             $table->id();
-            $table->string('nama_petugas', 50);
-            $table->string('jenis_kelamin', 10);
-            $table->string('jabatan', 15);
-            $table->string('no_hp', 15);
-            $table->text('alamat')->nullable();
+            $table->foreignId('id_kembali')->constrained('kembali')->onUpdate('cascade')->onDelete('cascade');
+            $table->foreignId('id_buku')->constrained('buku')->onUpdate('cascade')->onDelete('cascade');
             $table->timestamps();
-
-            //jk, jabatan, alamat, no hp, jam kerja
         });
     }
 
@@ -33,6 +28,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('petugas');
+        Schema::dropIfExists('detail_kembali');
     }
 };
