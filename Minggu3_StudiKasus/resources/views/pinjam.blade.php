@@ -22,22 +22,23 @@
                 <table class="table align-items-center table-flush" id="dataTable">
                   <thead class="thead-light">
                     <tr>
-                      <th>Name</th>
-                      <th>Position</th>
-                      <th>Office</th>
-                      <th>Age</th>
-                      <th>Start date</th>
-                      <th>Salary</th>
+                        <th>No</th>
+                        <th>Nama</th>
+                        <th>Id Buku</th>
+                        <th>Judul Buku</th>
+                        <th>Qty</th>
+                        <th>Petugas</th>
+                        <th>Tanggal Pinjam</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <td>Tiger Nixon</td>
-                      <td>System Architect</td>
-                      <td>Edinburgh</td>
-                      <td>61</td>
-                      <td>2011/04/25</td>
-                      <td>$320,800</td>
+                        {{-- <td>Tiger Nixon</td>
+                        <td>System Architect</td>
+                        <td>Edinburgh</td>
+                        <td>61</td>
+                        <td>2011/04/25</td>
+                        <td>$320,800</td> --}}
                     </tr>
                   </tbody>
                 </table>
