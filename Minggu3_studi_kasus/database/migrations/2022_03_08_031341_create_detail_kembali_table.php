@@ -14,11 +14,15 @@ return new class extends Migration
     public function up()
     {
         Schema::create('detail_kembali', function (Blueprint $table) {
-            $table->bigIncrements('id_detail_kembali');
-            $table->string('id_kembali', 100)->nullable()->default('text');
-            $table->date('tanggal_kembali');
-            $table->string('id_pinjam', 100)->nullable()->default('text');
-            $table->string('id_buku', 100)->nullable()->default('text');
+
+            $table->id();
+            $table->bigInteger('id_kembali')->unsigned();
+            $table->dateTIme('tanggal_kembali');
+            $table->bigInteger('id_pinjam')->unsigned();
+            $table->bigInteger('id_buku')->unsigned();
+            $table->Integer('qty')->unsigned();
+            $table->timestamps();
+
         });
     }
 
